@@ -10,6 +10,9 @@
 /* Definição de variáveis CSS */
 :root {
     font-size: 62.5%; /* Define o tamanho base da fonte como 62.5% */
+    --color-base-yellow: #ffee4a;
+    --color-base-orange: #fe9600;
+    --color-base-black: #2c2c2c;
 }
 
 /* Estilos para o corpo da página */
@@ -28,7 +31,7 @@ body {
 
 /* Estilo do cabeçalho */
 .header {
-    background-color: lightblue; /* Cor de fundo */
+    background-color: var(--color-base-orange); /* Cor de fundo */
     padding: 1.2rem 2.8rem; /* Preenchimento superior/inferior esquerdo/direito */
 }
 
@@ -57,13 +60,13 @@ body {
 .searchInput {
     border: none; /* Remove a borda da barra de pesquisa */
     border-radius: 4px; /* Borda arredondada */
-    background-color: aquamarine; /* Cor de fundo */
+    background-color: var(--color-base-yellow); /* Cor de fundo */
     padding: 1.2rem 1.6rem 1.2rem 1.4rem; /* Preenchimento superior/direito/inferior/esquerdo */
     width: 100%; /* Ocupa o espaço total */
 }
 
 .searchInput::placeholder {
-    color: blue; /* Cor do texto do placeholder */
+    color: var(--color-base-black); /* Cor do texto do placeholder */
     font-size: 1.6rem; /* Tamanho padrão da fonte */
     font-weight: 600; /* Peso da fonte semi-negrito */
 }
@@ -79,8 +82,8 @@ body {
 
 /* Ícone */
 .avatar {
-    width: 4.2rem; /* Tamanho do ícone */
-    height: 4.2rem; /* Altura do ícone */
+    width: 4.4rem; /* Tamanho do ícone */
+    height: 4.4rem; /* Altura do ícone */
     border-radius: 50%; /* Ícone circular */
 }
 
@@ -120,7 +123,7 @@ body {
 
 .voteBtn {
     border-radius: 50%; /* Borda arredondada */
-    background-color: aquamarine; /* Cor de fundo */
+    background-color: var(--color-base-orange); /* Cor de fundo */
     display: grid; /* Layout em grid */
     place-content: center; /* Alinhamento central */
     height: 4rem; /* Altura */
@@ -202,8 +205,8 @@ body {
 
 /* Rodapé da página */
 .footer {
-    background-color: var(); /* Cor de fundo */
-    color: var(); /* Cor do texto */
+    background-color: var(--color-base-orange); /* Cor de fundo */
+    color: var(--color-base-black); /* Cor do texto */
     padding: 1.6rem; /* Preenchimento */
     text-align: center; /* Alinha o texto ao centro horizontalmente */
 }
